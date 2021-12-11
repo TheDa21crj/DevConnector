@@ -1,0 +1,4 @@
+{
+    "mongoURL": "mongodb+srv://rishav:7PZCAAPKnD2JhBI2@connectn.cdvog.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    "jwtSecret": "myserettoken"
+}
