@@ -97,4 +97,3 @@ Register.protoType = {
 };
 
 export default connect(null, { setAlert, register })(Register);
-// export default connect(null, { setAlert })(Register);
