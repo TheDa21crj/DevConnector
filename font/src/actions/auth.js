@@ -11,19 +11,15 @@ import { setAlert } from "./alert";
 //load user
 export const loadUser = () => async(dispatch) => {
     if (localStorage.token) {
-        try {
-            setAuthToken(localStorage.token);
-            const res = await axios.get("/api/auth");
-            dispatch({
-                type: USER_LOADED,
-                payload: res.data,
-            });
-        } catch (error) {
-            dispatch({
-                type: AUTH_ERROR,
-            });
-        }
-    } else {
+        setAuthToken(localStorage.token);
+    }
+    try {
+        const res = await axios.get("/api/auth");
+        dispatch({
+            type: USER_LOADED,
+            payload: res.data,
+        });
+    } catch (error) {
         dispatch({
             type: AUTH_ERROR,
         });
