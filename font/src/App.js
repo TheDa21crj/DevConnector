@@ -28,20 +28,20 @@ function App() {
           <Nav />
           <Route exact path="/">
             <Home />
-          </Route>{" "}
+          </Route>
           <section className="container">
             <Alert />
             <Switch>
               <Route exact path="/register">
                 <Register />
-              </Route>{" "}
+              </Route>
               <Route exact path="/login">
                 <Login />
-              </Route>{" "}
-            </Switch>{" "}
-          </section>{" "}
-        </Fragment>{" "}
-      </Router>{" "}
+              </Route>
+            </Switch>
+          </section>
+        </Fragment>
+      </Router>
     </Provider>
   );
 }
