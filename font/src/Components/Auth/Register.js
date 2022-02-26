@@ -49,7 +49,6 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
             name="name"
             value={name}
             onChange={(e) => onChange(e)}
-            // required
           />
         </div>
         <div className="form-group">
