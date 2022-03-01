@@ -8,9 +8,11 @@ const Nav = ({ auth: { isAuthenticated, loading }, logout }) => {
   const authLinks = (
     <ul>
       <li>
+        <Link to="/dashboard">Dashboard</Link>
+      </li>
+      <li>
         <a onClick={logout} href="#!">
-          <i className="fas fa-sign-out-alt"></i>{" "}
-          <span className="hide-sm">Logout</span>
+          Logout
         </a>
       </li>
     </ul>
@@ -37,7 +39,7 @@ const Nav = ({ auth: { isAuthenticated, loading }, logout }) => {
         </Link>
       </h1>
       {!loading && (
-        <Fragment>{isAuthenticated ? authLinks : guestLink}</Fragment>
+        <Fragment> {isAuthenticated ? authLinks : guestLink} </Fragment>
       )}
     </nav>
   );
