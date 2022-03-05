@@ -41,6 +41,11 @@ function App() {
                 <Login />
               </Route>
               <PrivateRoute exact path="/dashboard" component={Dashboard} />
+              <PrivateRoute
+                exact
+                path="/create-profile"
+                component={CreateProfile}
+              />
             </Switch>
           </section>
         </Fragment>
