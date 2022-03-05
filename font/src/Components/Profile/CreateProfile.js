@@ -4,7 +4,18 @@ import { connect } from "react-redux";
 
 const CreateProfile = (props) => {
   const [formData, setformData] = useState({
-    com,
+    company: "",
+    website: "",
+    location: "",
+    status: "",
+    skills: "",
+    githubusername: "",
+    bio: "",
+    twitter: "",
+    facebook: "",
+    linkedin: "",
+    youtube: "",
+    instagram: "",
   });
   return <div></div>;
 };
