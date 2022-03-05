@@ -18,6 +18,8 @@ const CreateProfile = (props) => {
     instagram: "",
   });
 
+  const [displaySocialInp, setSocialInp] = useState(false);
+
   const {
     company,
     website,
