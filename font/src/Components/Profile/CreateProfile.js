@@ -17,6 +17,22 @@ const CreateProfile = (props) => {
     youtube: "",
     instagram: "",
   });
+
+  const {
+    company,
+    website,
+    location,
+    status,
+    skills,
+    githubusername,
+    bio,
+    twitter,
+    facebook,
+    linkedin,
+    youtube,
+    instagram,
+  } = formData;
+
   return <div></div>;
 };
 
