@@ -21,7 +21,7 @@ const Dashboard = ({
       <h1 className="large text-primary">Dashboard</h1>
       <p className="lead">Welcome {user && user.name}</p>
       {profile !== null ? (
-        <Fragment>has</Fragment>
+        <Fragment>has !</Fragment>
       ) : (
         <Fragment>
           <p>You have not yet setup a profile, please add some info</p>
