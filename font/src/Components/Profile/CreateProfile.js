@@ -3,6 +3,9 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 
 const CreateProfile = (props) => {
+  const [formData, setformData] = useState({
+    com,
+  });
   return <div></div>;
 };
 
