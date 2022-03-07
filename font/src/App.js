@@ -31,26 +31,26 @@ function App() {
           <Nav />
           <Route exact path="/">
             <Home />
-          </Route>{" "}
+          </Route>
           <section className="container">
             <Alert />
             <Switch>
               <Route exact path="/register">
                 <Register />
-              </Route>{" "}
+              </Route>
               <Route exact path="/login">
                 <Login />
-              </Route>{" "}
-              <PrivateRoute exact path="/dashboard" component={Dashboard} />{" "}
+              </Route>
+              <PrivateRoute exact path="/dashboard" component={Dashboard} />
               <PrivateRoute
                 exact
                 path="/create-profile"
                 component={CreateProfile}
-              />{" "}
-            </Switch>{" "}
-          </section>{" "}
-        </Fragment>{" "}
-      </Router>{" "}
+              />
+            </Switch>
+          </section>
+        </Fragment>
+      </Router>
     </Provider>
   );
 }
