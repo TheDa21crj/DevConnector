@@ -1,2 +1,5 @@
 node_modules/
-font/node_modules/
+config/production.json
+config/default.json
+client/build
+client/.eslintcache
